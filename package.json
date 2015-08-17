@@ -1,6 +1,6 @@
 {
   "name": "daab",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "daab (direct agent assist bot) commandline interface",
   "main": "lib/daab.js",
   "scripts": {
