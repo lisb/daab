@@ -25,6 +25,7 @@
   },
   "dependencies": {
     "commander": "^2.8.1",
+    "direct-js": "^0.1.0",
     "nodegit": "^0.4.1",
     "request": "^2.60.0",
     "tar": "^2.1.1",
