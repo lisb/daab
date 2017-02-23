@@ -25,6 +25,7 @@
   },
   "dependencies": {
     "commander": "^2.8.1",
+    "read": "^1.0.7",
     "direct-js": "^0.1.0"
   }
 }
