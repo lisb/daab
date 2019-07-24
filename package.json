@@ -1,6 +1,6 @@
 {
   "name": "daab",
-  "version": "0.1.8",
+  "version": "0.1.9",
   "description": "daab (direct agent assist bot) commandline interface",
   "main": "lib/daab.js",
   "scripts": {
@@ -25,7 +25,7 @@
   },
   "dependencies": {
     "commander": "^2.8.1",
-    "direct-js": "^0.1.26",
+    "direct-js": "^0.1.33",
     "dotenv": "^4.0.0",
     "read": "^1.0.7",
     "rimraf": "^2.6.2"
