@@ -1,0 +1,50 @@
+#!/bin/bash
+set -eu
+
+if [ -z "${DISABLE_NPM_INSTALL-}" ]; then
+  npm install
+fi
+export PATH="node_modules/.bin:node_modules/lisb-hubot/node_modules/.bin:$PATH"
+
+if [ -f .env ]; then
+  `grep '^[^# ]*=' .env | sed 's/^/export /'`
+fi
+
+FID=${PWD##*/}
+FID=${FID// /_}
+FOPT="\
+    --uid $FID \
+    --minUptime 10000 --spinSleepTime 600000 \
+    -o hubot.log -e hubot-err.log -a \
+    -w --watchDirectory scripts/ \
+    -c coffee node_modules/.bin/hubot -a direct ${@:2:$#} \
+"
+
+if [ -z "${REDIS_URL-}" ]; then
+  export REDIS_URL=redis://localhost:6379/$FID
+fi
+
+case ${1-} in
+run)
+  forever $FOPT
+  ;;
+start)
+  if pgrep -fo $PWD/node_modules/.bin/hubot > /dev/null ; then
+    echo "${FID} already Started: "
+    exit 1
+  fi
+  forever start $FOPT
+  ;;
+stop|restart)
+  forever $1 $FID
+  ;;
+status)
+  forever list | grep "] $FID "
+  ;;
+logs)
+  tail -f hubot.log
+  ;;
+*)
+  exec node_modules/.bin/hubot -a direct "$@"
+  ;;
+esac
