@@ -1,13 +1,13 @@
 {
-  "name": "starter",
-  "version": "0.3.9",
+  "name": "<%= packageName %>",
+  "version": "<%= version %>",
   "private": true,
 
   "scripts": {
     "start": "bin/hubot run"
   },
-  
-  "author": "L is B corp.",
+
+  "author": "<%= author %>",
 
   "keywords": [
     "hubot",
@@ -16,7 +16,7 @@
     "daab"
   ],
 
-  "description": "A simple helpful robot for your Company",
+  "description": "<%= description %>",
 
   "dependencies": {
     "lisb-hubot":    "^3.3.2",
