@@ -23,6 +23,10 @@
   "bin": {
     "daab": "lib/daab.js"
   },
+  "files": [
+    "lib",
+    "template"
+  ],
   "dependencies": {
     "commander": "^2.8.1",
     "direct-js": "^0.1.33",
