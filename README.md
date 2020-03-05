@@ -1,10 +1,17 @@
+# daab CLI
 
-# Installation
+## Installation
 
-    $ npm install -g daab
+```sh
+$ npm install -g daab
+```
 
-# Usage
+## Usage
 
-    $ daab
+```sh
+$ daab
+```
 
+## More information
 
+<https://daab.direct4b.com/>
