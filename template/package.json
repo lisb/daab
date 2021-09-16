@@ -2,25 +2,20 @@
   "name": "<%= packageName %>",
   "version": "<%= version %>",
   "private": true,
-
   "scripts": {
     "start": "bin/hubot run"
   },
-
   "author": "<%= author %>",
-
   "keywords": [
     "hubot",
     "direct",
     "bot",
     "daab"
   ],
-
   "description": "<%= description %>",
-
   "dependencies": {
-    "lisb-hubot":    "^3.3.2",
-    "lisb-hubot-redis-brain": "^1.0.0",
-    "lisb-forever": "^1.0.0"
+    "forever": "^4.0.0",
+    "lisb-hubot": "^3.3.2",
+    "lisb-hubot-redis-brain": "^1.0.0"
   }
 }

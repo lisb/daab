@@ -1,13 +1,11 @@
-FROM node:10 AS node_modules
+FROM node:12 AS node_modules
 
 WORKDIR /daab
 COPY package.json .
 RUN npm install
 
 
-FROM node:10-alpine
-
-MAINTAINER masataka.takeuchi
+FROM node:12-alpine
 
 # set timezone JST
 RUN apk --no-cache add tzdata && \
