@@ -28,6 +28,7 @@
     "template"
   ],
   "dependencies": {
+    "@npmcli/arborist": "^4.0.4",
     "commander": "^2.8.1",
     "direct-js": "^0.1.33",
     "dotenv": "^4.0.0",
