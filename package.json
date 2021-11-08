@@ -23,6 +23,9 @@
   "bin": {
     "daab": "lib/daab.js"
   },
+  "engines": {
+    "node": ">=12"
+  },
   "files": [
     "lib",
     "template"
@@ -30,12 +33,12 @@
   "dependencies": {
     "@npmcli/arborist": "^4.0.4",
     "commander": "^2.8.1",
-    "direct-js": "^0.1.33",
+    "direct-js": "^1.111.6",
     "dotenv": "^4.0.0",
     "inquirer": "^7.0.4",
-    "mem-fs-editor": "^6.0.0",
+    "mem-fs-editor": "^9.3.0",
     "read": "^1.0.7",
     "rimraf": "^2.6.2",
-    "yeoman-environment": "^2.8.0"
+    "yeoman-environment": "^3.6.0"
   }
 }
