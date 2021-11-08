@@ -23,6 +23,9 @@
   "bin": {
     "daab": "lib/daab.js"
   },
+  "engines": {
+    "node": ">=12"
+  },
   "files": [
     "lib",
     "template"
