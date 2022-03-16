@@ -15,7 +15,7 @@
   "description": "<%= description %>",
   "dependencies": {
     "forever": "^4.0.0",
-    "lisb-hubot": "^3.3.2",
+    "lisb-hubot": ">=4.0.0 <5.0.0",
     "lisb-hubot-redis-brain": "^1.0.0"
   }
 }
