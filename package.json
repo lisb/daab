@@ -24,7 +24,7 @@
     "daab": "lib/daab.js"
   },
   "engines": {
-    "node": ">=12"
+    "node": ">=14"
   },
   "files": [
     "lib",
