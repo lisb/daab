@@ -17,5 +17,16 @@
     "forever": "^4.0.0",
     "lisb-hubot": ">=4.0.0 <5.0.0",
     "lisb-hubot-redis-brain": "^1.0.0"
+  },
+  "overrides": {
+    "chokidar": {
+      "glob-parent": "^6.0.2"
+    },
+    "optimist": {
+      "minimist": "^0.2.4"
+    },
+    "broadway": {
+      "nconf": "^0.12.0"
+    }
   }
 }
