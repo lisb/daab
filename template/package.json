@@ -13,6 +13,10 @@
     "daab"
   ],
   "description": "<%= description %>",
+  "engines": {
+    "node": ">= 16",
+    "npm": ">= 8.3.0"
+  },
   "dependencies": {
     "forever": "^4.0.0",
     "lisb-hubot": ">=4.0.0 <5.0.0",
