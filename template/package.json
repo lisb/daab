@@ -21,7 +21,7 @@
     "forever": "^4.0.0",
     "hubot-direct": ">=3 <4",
     "lisb-hubot": ">=5 <6",
-    "lisb-hubot-redis-brain": "^1.0.0"
+    "hubot-redis-brain": ">=1.1.0 <2"
   },
   "overrides": {
     "chokidar": {
