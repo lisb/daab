@@ -19,7 +19,8 @@
   },
   "dependencies": {
     "forever": "^4.0.0",
-    "lisb-hubot": ">=4.0.0 <5.0.0",
+    "hubot-direct": ">=3 <4",
+    "lisb-hubot": ">=5 <6",
     "lisb-hubot-redis-brain": "^1.0.0"
   },
   "overrides": {
