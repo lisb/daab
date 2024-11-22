@@ -1,0 +1,44 @@
+name: build and test
+
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
+
+permissions:
+  contents: read
+
+defaults:
+  run:
+    shell: bash
+
+jobs:
+  test:
+    strategy:
+      matrix:
+        node:
+          - 18.x
+          - 20.x
+          - 22.x
+        os:
+          - ubuntu-latest
+          - windows-latest
+          - macos-latest
+
+    runs-on: ${{ matrix.os }}
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Use Node.js ${{ matrix.node }}
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node }}
+
+      - name: Run tests
+        run: |
+          npm install
+          # TODO: npm test
