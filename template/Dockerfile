@@ -1,11 +1,11 @@
-FROM node:12 AS node_modules
+FROM node:24 AS node_modules
 
 WORKDIR /daab
 COPY package.json .
 RUN npm install
 
 
-FROM node:12-alpine
+FROM node:24-alpine
 
 # set timezone JST
 RUN apk --no-cache add tzdata && \
